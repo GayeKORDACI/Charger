@@ -18,6 +18,8 @@
 		536B09DB287F1275006E924D /* ChargerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536B09DA287F1275006E924D /* ChargerTests.swift */; };
 		536B09E5287F1275006E924D /* ChargerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536B09E4287F1275006E924D /* ChargerUITests.swift */; };
 		536B09E7287F1275006E924D /* ChargerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536B09E6287F1275006E924D /* ChargerUITestsLaunchTests.swift */; };
+		536B09F5287F548B006E924D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 536B09F4287F548B006E924D /* Colors.xcassets */; };
+		536B09F8287F5550006E924D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536B09F7287F5550006E924D /* Extensions.swift */; };
 		713E491579981E599186D488 /* Pods_Charger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F1A1F75FD51066844D4F8E /* Pods_Charger.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		536B09E0287F1275006E924D /* ChargerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChargerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		536B09E4287F1275006E924D /* ChargerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargerUITests.swift; sourceTree = "<group>"; };
 		536B09E6287F1275006E924D /* ChargerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		536B09F4287F548B006E924D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		536B09F7287F5550006E924D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		56E22BB6D24426CBF7D19785 /* Pods-Charger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charger.debug.xcconfig"; path = "Target Support Files/Pods-Charger/Pods-Charger.debug.xcconfig"; sourceTree = "<group>"; };
 		648378937853043F3A102227 /* Pods-ChargerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChargerTests.debug.xcconfig"; path = "Target Support Files/Pods-ChargerTests/Pods-ChargerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7519B5AEA2506E2469C67DC7 /* Pods_Charger_ChargerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Charger_ChargerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,7 +105,6 @@
 				648378937853043F3A102227 /* Pods-ChargerTests.debug.xcconfig */,
 				BB55CB3183BE3189FAB16A5F /* Pods-ChargerTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -130,11 +133,12 @@
 		536B09C2287F1273006E924D /* Charger */ = {
 			isa = PBXGroup;
 			children = (
+				536B09F6287F5543006E924D /* Helper */,
+				536B09F3287F5460006E924D /* Assets */,
 				536B09C3287F1273006E924D /* AppDelegate.swift */,
 				536B09C5287F1273006E924D /* SceneDelegate.swift */,
 				536B09C7287F1273006E924D /* ViewController.swift */,
 				536B09C9287F1273006E924D /* Main.storyboard */,
-				536B09CC287F1275006E924D /* Assets.xcassets */,
 				536B09CE287F1275006E924D /* LaunchScreen.storyboard */,
 				536B09D1287F1275006E924D /* Info.plist */,
 			);
@@ -156,6 +160,23 @@
 				536B09E6287F1275006E924D /* ChargerUITestsLaunchTests.swift */,
 			);
 			path = ChargerUITests;
+			sourceTree = "<group>";
+		};
+		536B09F3287F5460006E924D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				536B09CC287F1275006E924D /* Assets.xcassets */,
+				536B09F4287F548B006E924D /* Colors.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		536B09F6287F5543006E924D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				536B09F7287F5550006E924D /* Extensions.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		AD41A872432B25C536F50C0A /* Frameworks */ = {
@@ -278,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				536B09D0287F1275006E924D /* LaunchScreen.storyboard in Resources */,
+				536B09F5287F548B006E924D /* Colors.xcassets in Resources */,
 				536B09CD287F1275006E924D /* Assets.xcassets in Resources */,
 				536B09CB287F1273006E924D /* Main.storyboard in Resources */,
 			);
@@ -410,6 +432,7 @@
 				536B09C8287F1273006E924D /* ViewController.swift in Sources */,
 				536B09C4287F1273006E924D /* AppDelegate.swift in Sources */,
 				536B09C6287F1273006E924D /* SceneDelegate.swift in Sources */,
+				536B09F8287F5550006E924D /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
