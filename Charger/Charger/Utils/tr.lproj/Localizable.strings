@@ -1,0 +1,97 @@
+/* 
+  Localizable.strings
+  Charger
+
+  Created by Gaye Kordacı Deprem on 13.07.2022.
+  
+*/
+
+//Giriş Yap Ekranı
+"login_title" = "Giriş Yapın";
+"welcome" = "Charger'a hoşgeldiniz";
+"need_to_login" = "Charger'ı kullanmak için giriş yapmanız gerekiyor.";
+"email" = "E-Posta Adresiniz";
+"login" = "GİRİŞ YAP";
+
+//Randevular Ekranı
+"reservations" = "Randevular";
+"not_created_reservation" = "Henüz bir randevu oluşturmadınız.";
+"reservations_listed" = "Oluşturulan randevular burada listelenir.";
+"create_reservation" = "RANDEVU OLUŞTUR";
+"active_reservation" = "Güncel Randevular";
+"past_reservation" = "Geçmiş Randevular";
+"reservation_cancelation" = "Randevu İptali";
+"delete_reservation" = "RANDEVUYU İPTAL ET";
+"cancel" = "VAZGEÇ";
+
+//İstasyon Seçim Ekranı
+"select_station" = "İstasyon Seçin";
+"search_station" = "İstasyon Ara";
+"service_hours" = "Hizmet saatleri :";
+"number_of_sockets_available" = "Uygun soket sayısı :";
+"no_results" = "Aramanız ile eşleşen bir sonuç bulunamadı.";
+"please_make_new_search" = "Lütfen yeni bir arama yapın.";
+
+//Filtreleme Ekranı
+"filters" = "Filtreleme";
+"cleare" = "TEMİZLE";
+"device_type" = "Cihaz Tipi";
+"ac" = "AC";
+"dc" = "DC (Hızlı Şarj)";
+"socket_type" = "Soket Tipi";
+"distance" = "Uzaklık (km)";
+"services" = "Hizmetler";
+"park" = "Otopark";
+"snack_bar" = "Büfe";
+"wi_fi" = "Wi-Fi";
+"filter" = "FİLTRELE";
+
+//Tarih ve Saat Seçin Ekranı
+"choose_date_and_time" = "Tarih ve saat seçin";
+"reservation_date" = "Randevu Tarihi";
+"socket1" = "Soket 1";
+"socket2" = "Soket 2";
+"socket3" = "Soket 3";
+"confirm_date_and_time" = "TARİH VE SAATİ ONAYLA";
+"invalid_date" = "Geçersiz Tarih";
+"can_not_make_reservation" = "Geçmiş bir tarihe randevu alamazsınız.";
+"edit" = "DÜZENLE";
+"select_today" = "BUGÜNÜ SEÇ";
+
+//Randevu Detayı Ekranı
+"reservation_detail" = "Randevu Detayı";
+"address" = "Adres";
+"station_code" = "İstasyon Kodu";
+"socket_info" = "SOKET BİLGİLERİ";
+"socket_number" = "Soket Numarası";
+"output_power" = "Çıkış Gücü";
+"reservation_info" = "RANDEVU BİLGİLERİ";
+"reservation_period" = "Randevu Süresi";
+"get_notification" = "Bildirim Al";
+"confirm_reservation" = "RANDEVU ONAYLA";
+"invalid_notification_time" = "Geçersiz Bildirim Zamanı";
+"invalid_notification_time_detail" = "Randevunuza kalan süre seçtiğiniz bildirim zamanından daha kısadır.";
+"continue_without_notification" = "BİLDİRİMSİZ DEVAM ET";
+
+//Profil Ekranı
+"profile" = "Profil";
+"email" = "E-Posta";
+"device_id" = "Cihaz ID :";
+"logout" = "ÇIKIŞ YAP";
+
+
+
+
+
+"email_not_in_correct_form" = "Girilen E-Posta adresi doğru bir biçimde değil.";
+"not_found" = "İstek bulunamadı";
+"user_not_found" = "Kullanıcı bulunamadı";
+"unauthorized_request" = "İşlemi yapmak için gereken yetkiye sahip değilsiniz.";
+"station_not_found" = "Aranan istasyon bulunamadı.";
+"station_not_accepting_appointments"  = "İstasyon verilen tarihte rezervasyon kabul etmemektedir.";
+//"invalid_date" = "Geçersiz / geçmiş tarih bilgisi girildi.";
+"invalid_time" = "Geçersiz / geçmiş tarih bilgisi girildi.";
+"time_format_error" = "Saat formatı istenilen biçimde değil.";
+"socket_occupied" = "Soket belirtilen tarih ve saatte zaten kullanımda.";
+"appointment_not_found" = "Aranan randevu bulunamadı.";
+"appointment_user_mismatch" = "Aranan randevu verisi verilen kullanıcıya ait değil.";

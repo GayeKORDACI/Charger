@@ -1,0 +1,99 @@
+/* 
+  Localizable.strings
+  Charger
+
+  Created by Gaye Kordacı Deprem on 13.07.2022.
+  
+*/
+
+//Giriş Yap Ekranı
+"login_title" = "Sign In";
+"welcome" = "Welcome to Charger";
+"need_to_login" = "You need to be logged in to use Charger";
+"email" = "E-Mail Address";
+"login" = "LOGIN";
+
+//Randevular Ekranı
+"reservations" = "Reservations";
+"not_created_reservation" = "You have not created a reservation yet.";
+"reservations_listed" = "Reservations are listed here.";
+"create_reservation" = "CREATE RESERVATION";
+"active_reservation" = "Active Reservation";
+"past_reservation" = "Past Reservation";
+"reservation_cancelation" = "Delete Reservation";
+"delete_reservation" = "DELETE RESERVATION";
+"cancel" = "CANCEL";
+
+//İstasyon Seçim Ekranı
+"select_station" = "Select Station";
+"search_station" = "Search Station";
+"service_hours" = "Service hours :";
+"number_of_sockets_available" = "Number of sockets available :";
+"no_results" = "No results were found matching your search.";
+"please_make_new_search" = "Please make a new search";
+
+//Filtreleme Ekranı
+"filters" = "Filters";
+"cleare" = "CLEAR";
+"device_type" = "Device Type";
+"ac" = "AC";
+"dc" = "DC (Quick Charge)";
+"socket_type" = "Socket Type";
+"distance" = "Distance (km)";
+"services" = "Services";
+"park" = "Parking Lot";
+"snack_bar" = "Snack Bar";
+"wi_fi" = "Wi-Fi";
+"filter" = "FILTER";
+
+//Tarih ve Saat Seçin Ekranı
+"choose_date_and_time" = "Choose date and time";
+"reservation_date" = "Reservation Date";
+"socket1" = "Socket 1";
+"socket2" = "Socket 2";
+"socket3" = "Socket 3";
+"confirm_date_and_time" = "CONFIRM DATE AND TIME";
+"invalid_date" = "Invalid Date";
+"can_not_make_reservation" = "You can not make a reservation to a past date.";
+"edit" = "EDIT";
+"select_today" = "SELECT TODAY";
+
+//Randevu Detay Ekranı
+"reservation_detail" = "Reservation Detail";
+"address" = "Address";
+"station_code" = "Station Code";
+"socket_info" = "SOCKET INFORMATION";
+"socket_number" = "Socket Number";
+"output_power" = "Power";
+"reservation_info" = "RESERVATION INFORMATION";
+"reservation_period" = "Reservation Period";
+"get_notification" = "Get Notification";
+"confirm_reservation" = "CONFIRM RESERVATION";
+"invalid_notification_time" = "Invalid Notification Time";
+"invalid_notification_time_detail" = "The remaining time to your reservation is before the notification time you choose.";
+"continue_without_notification" = "CONTINUE WITHOUT NOTIFICATION";
+
+//Profil Ekranı
+"profile" = "Profile";
+"email" = "E-Mail :";
+"device_id" = "Device ID :";
+"logout" = "LOGOUT";
+
+
+
+
+
+
+"email_not_in_correct_form" = "E-mail is not in correct form.";
+"not_found" = "Request was not found";
+"user_not_found" = "User was not found";
+"unauthorized_request" = "You are not authorized to fulfill the request.";
+"station_not_found" = "Station was not found.";
+"station_not_accepting_appointments"  = "Station is not accepting appointments whose date and time are specified.";
+//"invalid_date" = "Invalid / past date information.";
+"invalid_time" = "Invalid / past time information.";
+"time_format_error" = "Time format is not in expected format";
+"socket_occupied" = "The socket is already in use on given date and time";
+"appointment_not_found" = "Appointment was not found.";
+"appointment_user_mismatch" = "Appointment does not belong to user given.";
+
