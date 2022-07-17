@@ -33,7 +33,10 @@ extension UIColor {
     static let grayscale = UIColor(hexString: "#B7BDCB")
     static let state = UIColor(hexString: "#FF2C55")
     
+   
+    
 }
+
 
 extension CGColor {
     static let whiteColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0).cgColor
@@ -135,4 +138,40 @@ extension UIViewController {
         }
     }
     
+}
+
+extension String {
+    func changeWithBoldText(text: String, font: UIFont? = nil) -> NSAttributedString {
+        let _font = font ?? UIFont.systemFont(ofSize: 30, weight: .regular)
+        let fullString = NSMutableAttributedString(string: self, attributes: [NSAttributedString.Key.font: _font])
+        let boldFontAttribute: [NSAttributedString.Key: Any] = [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: _font.pointSize)]
+        let range = (self as NSString).range(of: text)
+        fullString.addAttributes(boldFontAttribute, range: range)
+        return fullString
+    }}
+
+
+extension UITextField {
+
+    func setUnderLine() {
+        let border = CALayer()
+        let width = CGFloat(0.5)
+        border.borderColor = UIColor.white.cgColor
+        border.frame = CGRect(x: 0, y: self.frame.size.height - width , width:  self.frame.size.width - 10, height: self.frame.size.height)
+        border.borderWidth = width
+        self.layer.addSublayer(border)
+        self.layer.masksToBounds = true
+    }
+
+}
+
+extension UITextField{
+   @IBInspectable var placeHolderColor: UIColor? {
+        get {
+            return self.placeHolderColor
+        }
+        set {
+            self.attributedPlaceholder = NSAttributedString(string:self.placeholder != nil ? self.placeholder! : "", attributes:[NSAttributedString.Key.foregroundColor: newValue!])
+        }
+    }
 }

@@ -28,6 +28,19 @@
 		536B0A1E2880288E006E924D /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 536B0A1D2880288E006E924D /* LoginViewController.storyboard */; };
 		536B0A212880410C006E924D /* AppBootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536B0A202880410C006E924D /* AppBootstrap.swift */; };
 		536B0A2328804597006E924D /* AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536B0A2228804597006E924D /* AppAppearance.swift */; };
+		536B0A28288088EE006E924D /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536B0A27288088EE006E924D /* ReservationViewController.swift */; };
+		536B0A2A2880891A006E924D /* ReservationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 536B0A292880891A006E924D /* ReservationViewController.storyboard */; };
+		536B0A2C2880893E006E924D /* ReservationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536B0A2B2880893E006E924D /* ReservationViewModel.swift */; };
+		53CC628F2882C5D6003A2CED /* ServiceConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CC628E2882C5D6003A2CED /* ServiceConnector.swift */; };
+		53CC62912882C5E4003A2CED /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CC62902882C5E4003A2CED /* APIManager.swift */; };
+		53CC62932882C6F5003A2CED /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CC62922882C6F5003A2CED /* Globals.swift */; };
+		53CC62952882D502003A2CED /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CC62942882D502003A2CED /* Enums.swift */; };
+		53CC62982882D606003A2CED /* LoginAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CC62972882D606003A2CED /* LoginAPIModel.swift */; };
+		53CC629A2882DE50003A2CED /* LogoutAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CC62992882DE50003A2CED /* LogoutAPIModel.swift */; };
+		53CC629E2882F50B003A2CED /* StationsAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CC629D2882F50A003A2CED /* StationsAPIModel.swift */; };
+		53CC62A02882FD53003A2CED /* StationAvailabilityAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CC629F2882FD53003A2CED /* StationAvailabilityAPIModel.swift */; };
+		53CC62A2288301B0003A2CED /* ReservationAPIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CC62A1288301B0003A2CED /* ReservationAPIModel.swift */; };
+		53CC62A828834BDB003A2CED /* GetLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CC62A728834BDB003A2CED /* GetLocation.swift */; };
 		713E491579981E599186D488 /* Pods_Charger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F1A1F75FD51066844D4F8E /* Pods_Charger.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +87,19 @@
 		536B0A1D2880288E006E924D /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
 		536B0A202880410C006E924D /* AppBootstrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBootstrap.swift; sourceTree = "<group>"; };
 		536B0A2228804597006E924D /* AppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAppearance.swift; sourceTree = "<group>"; };
+		536B0A27288088EE006E924D /* ReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
+		536B0A292880891A006E924D /* ReservationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReservationViewController.storyboard; sourceTree = "<group>"; };
+		536B0A2B2880893E006E924D /* ReservationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationViewModel.swift; sourceTree = "<group>"; };
+		53CC628E2882C5D6003A2CED /* ServiceConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConnector.swift; sourceTree = "<group>"; };
+		53CC62902882C5E4003A2CED /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		53CC62922882C6F5003A2CED /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		53CC62942882D502003A2CED /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		53CC62972882D606003A2CED /* LoginAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPIModel.swift; sourceTree = "<group>"; };
+		53CC62992882DE50003A2CED /* LogoutAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutAPIModel.swift; sourceTree = "<group>"; };
+		53CC629D2882F50A003A2CED /* StationsAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsAPIModel.swift; sourceTree = "<group>"; };
+		53CC629F2882FD53003A2CED /* StationAvailabilityAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationAvailabilityAPIModel.swift; sourceTree = "<group>"; };
+		53CC62A1288301B0003A2CED /* ReservationAPIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationAPIModel.swift; sourceTree = "<group>"; };
+		53CC62A728834BDB003A2CED /* GetLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLocation.swift; sourceTree = "<group>"; };
 		56E22BB6D24426CBF7D19785 /* Pods-Charger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charger.debug.xcconfig"; path = "Target Support Files/Pods-Charger/Pods-Charger.debug.xcconfig"; sourceTree = "<group>"; };
 		648378937853043F3A102227 /* Pods-ChargerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChargerTests.debug.xcconfig"; path = "Target Support Files/Pods-ChargerTests/Pods-ChargerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7519B5AEA2506E2469C67DC7 /* Pods_Charger_ChargerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Charger_ChargerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +176,7 @@
 		536B09C2287F1273006E924D /* Charger */ = {
 			isa = PBXGroup;
 			children = (
+				53CC628D2882C5B4003A2CED /* Network */,
 				536B09D1287F1275006E924D /* Info.plist */,
 				536B09FB287F5BB4006E924D /* Application */,
 				536B09F3287F5460006E924D /* Assets */,
@@ -195,6 +222,9 @@
 				536B0A0A28801DEC006E924D /* Protocols */,
 				536B09F7287F5550006E924D /* Extensions.swift */,
 				536B0A08287F5D94006E924D /* Localizable.strings */,
+				53CC62922882C6F5003A2CED /* Globals.swift */,
+				53CC62942882D502003A2CED /* Enums.swift */,
+				53CC62A728834BDB003A2CED /* GetLocation.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -202,6 +232,7 @@
 		536B09F9287F5B7A006E924D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				53CC62962882D5D8003A2CED /* APIModels */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -209,6 +240,7 @@
 		536B09FA287F5B9B006E924D /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				536B0A24288088A3006E924D /* ReservationScene */,
 				536B0A1428801F1F006E924D /* LoginScene */,
 				536B0A1328801F13006E924D /* SplashScene */,
 			);
@@ -282,6 +314,53 @@
 				536B0A202880410C006E924D /* AppBootstrap.swift */,
 			);
 			path = Bootstrap;
+			sourceTree = "<group>";
+		};
+		536B0A24288088A3006E924D /* ReservationScene */ = {
+			isa = PBXGroup;
+			children = (
+				536B0A26288088B7006E924D /* ViewModel */,
+				536B0A25288088AF006E924D /* View */,
+			);
+			path = ReservationScene;
+			sourceTree = "<group>";
+		};
+		536B0A25288088AF006E924D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				536B0A27288088EE006E924D /* ReservationViewController.swift */,
+				536B0A292880891A006E924D /* ReservationViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		536B0A26288088B7006E924D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				536B0A2B2880893E006E924D /* ReservationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		53CC628D2882C5B4003A2CED /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				53CC628E2882C5D6003A2CED /* ServiceConnector.swift */,
+				53CC62902882C5E4003A2CED /* APIManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		53CC62962882D5D8003A2CED /* APIModels */ = {
+			isa = PBXGroup;
+			children = (
+				53CC62972882D606003A2CED /* LoginAPIModel.swift */,
+				53CC62992882DE50003A2CED /* LogoutAPIModel.swift */,
+				53CC629D2882F50A003A2CED /* StationsAPIModel.swift */,
+				53CC629F2882FD53003A2CED /* StationAvailabilityAPIModel.swift */,
+				53CC62A1288301B0003A2CED /* ReservationAPIModel.swift */,
+			);
+			path = APIModels;
 			sourceTree = "<group>";
 		};
 		AD41A872432B25C536F50C0A /* Frameworks */ = {
@@ -409,6 +488,7 @@
 				536B09F5287F548B006E924D /* Colors.xcassets in Resources */,
 				536B0A1E2880288E006E924D /* LoginViewController.storyboard in Resources */,
 				536B09CD287F1275006E924D /* Assets.xcassets in Resources */,
+				536B0A2A2880891A006E924D /* ReservationViewController.storyboard in Resources */,
 				536B09CB287F1273006E924D /* SplashViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,13 +619,25 @@
 			files = (
 				536B09C4287F1273006E924D /* AppDelegate.swift in Sources */,
 				536B0A0C28801E00006E924D /* StoryboardInstantiable.swift in Sources */,
+				53CC629A2882DE50003A2CED /* LogoutAPIModel.swift in Sources */,
 				536B0A2328804597006E924D /* AppAppearance.swift in Sources */,
+				536B0A2C2880893E006E924D /* ReservationViewModel.swift in Sources */,
 				536B09C6287F1273006E924D /* SceneDelegate.swift in Sources */,
 				536B0A1728801F34006E924D /* LoginViewController.swift in Sources */,
+				53CC62912882C5E4003A2CED /* APIManager.swift in Sources */,
 				536B09F8287F5550006E924D /* Extensions.swift in Sources */,
+				53CC62932882C6F5003A2CED /* Globals.swift in Sources */,
+				53CC62982882D606003A2CED /* LoginAPIModel.swift in Sources */,
 				536B0A1228801EBD006E924D /* SplashViewController.swift in Sources */,
 				536B0A0F28801E63006E924D /* BaseViewController.swift in Sources */,
+				53CC62A2288301B0003A2CED /* ReservationAPIModel.swift in Sources */,
+				53CC628F2882C5D6003A2CED /* ServiceConnector.swift in Sources */,
+				536B0A28288088EE006E924D /* ReservationViewController.swift in Sources */,
 				536B0A212880410C006E924D /* AppBootstrap.swift in Sources */,
+				53CC62A02882FD53003A2CED /* StationAvailabilityAPIModel.swift in Sources */,
+				53CC629E2882F50B003A2CED /* StationsAPIModel.swift in Sources */,
+				53CC62A828834BDB003A2CED /* GetLocation.swift in Sources */,
+				53CC62952882D502003A2CED /* Enums.swift in Sources */,
 				536B0A1C28801FCE006E924D /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

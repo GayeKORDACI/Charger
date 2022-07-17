@@ -21,4 +21,9 @@ final class AppBootstrap {
     static func createLoginViewController() -> UIViewController {
         return LoginViewController.create(with: LoginViewModel())
     }
+    
+    // MARK: - ReservationViewController
+    static func createReservationViewController() -> UIViewController {
+        return ReservationViewController.create(with: ReservationViewModel())
+    }
 }
