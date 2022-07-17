@@ -20,6 +20,7 @@ class APIManager {
                 if let responseModel = try? JSONDecoder().decode(LoginAPIModel.self, from: jsonData){
                     
                     Globals.shared.userToken = responseModel.token
+                    Globals.shared.userId = responseModel.userID
                     callbackSuccess(responseModel)
                     return
                 } else {
