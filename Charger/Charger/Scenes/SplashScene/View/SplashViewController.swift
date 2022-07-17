@@ -18,7 +18,7 @@ class SplashViewController: BaseViewController {
         splashBackgroundImage.image = UIImage(named: "splashBackgroundImage")
         splashBackgroundImage.contentMode = .scaleAspectFill
         self.navigationController?.navigationBar.isHidden = true;
-    
+        
 
         // For use in foreground
         self.locationManager.requestWhenInUseAuthorization()
