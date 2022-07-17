@@ -113,6 +113,14 @@ extension UIView {
         addGestureRecognizer(tap)
         isUserInteractionEnabled = true
     }
+    
+    func setGradientVertically(colors: [CGColor]) {
+        let gradient: CAGradientLayer = CAGradientLayer()
+        gradient.colors = colors
+        gradient.locations = [0.0 , 1.0]
+        gradient.frame = bounds
+        layer.insertSublayer(gradient, at: 0)
+    }
 }
 
 extension String {
