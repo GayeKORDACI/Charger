@@ -17,6 +17,10 @@ class LoginViewController: BaseViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
     
+    @IBAction func loginButtonTapped(_ sender: UIButton) {
+        
+           viewModel.loginService(email: emailTextField.text ?? "", deviceUDID: "047923")
+    }
     
     static func create(with viewModel: LoginViewModel) -> LoginViewController {
         let view = LoginViewController.instantiateViewController()
@@ -26,18 +30,17 @@ class LoginViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+   
+        setupViewModel()
         
-        
-        
-        let gradient: CAGradientLayer = CAGradientLayer()
-        gradient.colors = [UIColor.charcoalGray.cgColor, UIColor.dark.cgColor]
-        gradient.locations = [0.0 , 1.0]
-        //gradient.startPoint = CGPoint(x: 0.0, y: 0.0)
-        //gradient.endPoint = CGPoint(x: 1.0, y: 1.0)
-        //gradient.frame = CGRect(x: 0.0, y: 0.0, width: self.view.frame.size.width, height: self.view.frame.size.height)
-        gradient.frame = self.view.bounds
-        self.view.layer.insertSublayer(gradient, at: 0)
-        
+    }
+    
+    private func setupUI() {
+
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        self.navigationItem.title = "login_title".localized
+                
         self.navigationController?.navigationBar.isHidden = false;
         
         let welcomeText = "welcome".localized.changeWithBoldText(text: "Charger")
@@ -58,7 +61,7 @@ class LoginViewController: BaseViewController {
         emailTextField.placeHolderColor = .grayscale
         emailTextField.backgroundColor = UIColor.clear
         emailTextField.textColor = .grayscale
-        
+        emailTextField.text = "kullanici@gmail.com"
         
         loginButton.setCorners(loginButton.frame.size.height/2)
         loginButton.backgroundColor = .white
@@ -66,73 +69,17 @@ class LoginViewController: BaseViewController {
         loginButton.setTitleColor(.dark, for: .normal)
         loginButton.titleLabel?.font = UIFont.systemFont(ofSize: 17.0, weight: .bold)
         
-        let getLocation = GetLocation()
-
-        getLocation.run {
-            if let location = $0 {
-                //print("location = \(location.coordinate.latitude) \(location.coordinate.longitude)")
-                Globals.shared.userLatitude = location.coordinate.latitude
-                Globals.shared.userLongitude = location.coordinate.longitude
-            } else {
-                print("Get Location failed \(getLocation.didFailWithError)")
-            }
-        }
-        
-        
-        APIManager.shared.login(email: "kullanici@gmail.com", deviceUDID: "047923") { response in
-            
-            print(response)
-            
-           
-            APIManager.shared.getStations(userID: "\(response.userID ?? 0)", userLatitude: Globals.shared.userLatitude!, userLongitude: Globals.shared.userLongitude!) { response in
-                print(response)
-
-            } callbackFailure: { errors in
-                print(errors)
-            }
-            
-            APIManager.shared.getStationDetail(stationID: 10, userID: response.userID ?? 0, date: "2022-11-30") { response in
-                print(response)
-            } callbackFailure: { errors in
-                print(errors)
-            }
-            
-            APIManager.shared.getReservations(userID: response.userID ?? 0, userLatitude: Globals.shared.userLatitude!, userLongitude: Globals.shared.userLongitude!) { response in
-                print(response)
-            } callbackFailure: { errors in
-                print(errors)
-            }
-
-            APIManager.shared.createReservation(userID: response.userID ?? 0, userLatitude: Globals.shared.userLatitude!, userLongitude: Globals.shared.userLongitude!, stationID: 10, socketID: 21, slot: "02:00", date: "2022-11-30") { response in
-                print(response)
-            } callbackFailure: { errors in
-                print(errors)
-            }
-
-
-            
-        } callbackFailure: { errors in
-            
-            print(errors)
-            
-        }
-        
     }
     
-    //APIManager.shared.getCities(userID: "\(response.userID ?? 0)") { response in
-    
-    //        self.delayWithSeconds(3) {
-    //
-    //            self.navigationController?.pushViewController(AppBootstrap.createReservationViewController(), animated: true)
-    //
-    //        }
-    
-    //    }
-    //    callbackFailure: { errors in
-    //        print(errors)
-    //    }
-    
-    
+    private func setupViewModel() {
+        viewModel.getLocation()
+        
+        viewModel.didFetchLoginData = { [weak self] response in
+            guard let self = self else {return}
+            self.navigationController?.pushViewController(AppBootstrap.createReservationViewController(datas: response), animated: true)
+
+        }
+    }
     
 //    APIManager.shared.logout(userID: response.userID ?? 0) { response in
 //        print(response)
