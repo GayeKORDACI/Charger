@@ -31,13 +31,7 @@ class ProfileViewController: BaseViewController {
         super.viewDidLoad()
 
         profileImegeView.image = UIImage(named:"Badge")
-        
-        let gradient: CAGradientLayer = CAGradientLayer()
-        gradient.colors = [UIColor.charcoalGray.cgColor, UIColor.dark.cgColor]
-        gradient.locations = [0.0 , 1.0]
-        gradient.frame = self.view.bounds
-        self.view.layer.insertSublayer(gradient, at: 0)
-        
+   
         epostaTitleLabel.text = "email_profile".localized
         epostaTitleLabel.textColor = .grayscale
         epostaLabel.text = "kordacig@gmail.com"
