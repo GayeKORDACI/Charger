@@ -77,7 +77,7 @@
 
 //Profil Ekranı
 "profile" = "Profil";
-"email_profile" = "E-Posta";
+"email_profile" = "E-Posta :";
 "device_id" = "Cihaz ID :";
 "logout" = "ÇIKIŞ YAP";
 
