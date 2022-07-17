@@ -23,8 +23,8 @@ final class AppBootstrap {
     }
     
     // MARK: - ReservationViewController
-    static func createReservationViewController() -> UIViewController {
-        return ReservationViewController.create(with: ReservationViewModel())
+    static func createReservationViewController(datas: [ReservationAPIModel]?) -> UIViewController {
+        return ReservationViewController.create(with: ReservationViewModel(), datas: datas)
     }
     
     // MARK: - ProfileViewController
