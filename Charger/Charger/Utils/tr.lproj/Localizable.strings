@@ -5,10 +5,12 @@
   Created by Gaye Kordacı Deprem on 13.07.2022.
   
 */
+//Uygulama İzinleri
+"location_permission" = "'Charger', uygulamayı kullanırken konumunuza erişebilsin mi?";
 
 //Giriş Yap Ekranı
 "login_title" = "Giriş Yapın";
-"welcome" = "Charger'a hoşgeldiniz";
+"welcome" = "Charger'a hoş geldiniz.";
 "need_to_login" = "Charger'ı kullanmak için giriş yapmanız gerekiyor.";
 "email" = "E-Posta Adresiniz";
 "login" = "GİRİŞ YAP";
@@ -75,7 +77,7 @@
 
 //Profil Ekranı
 "profile" = "Profil";
-"email" = "E-Posta";
+"email_profile" = "E-Posta";
 "device_id" = "Cihaz ID :";
 "logout" = "ÇIKIŞ YAP";
 

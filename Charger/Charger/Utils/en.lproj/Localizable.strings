@@ -5,10 +5,12 @@
   Created by Gaye Kordacı Deprem on 13.07.2022.
   
 */
+//Uygulama İzinleri
+"location_permission" = "Can 'Charger' access your location while using the app?";
 
 //Giriş Yap Ekranı
 "login_title" = "Sign In";
-"welcome" = "Welcome to Charger";
+"welcome" = "Welcome to Charger.";
 "need_to_login" = "You need to be logged in to use Charger";
 "email" = "E-Mail Address";
 "login" = "LOGIN";
@@ -75,7 +77,7 @@
 
 //Profil Ekranı
 "profile" = "Profile";
-"email" = "E-Mail :";
+"email_profile" = "E-Mail :";
 "device_id" = "Device ID :";
 "logout" = "LOGOUT";
 
