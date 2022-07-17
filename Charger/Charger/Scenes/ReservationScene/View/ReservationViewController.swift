@@ -21,7 +21,10 @@ class ReservationViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.delayWithSeconds(3) {
+            self.navigationController?.pushViewController(AppBootstrap.createProfileViewController(), animated: true)
         
+        }
         // Do any additional setup after loading the view.
     }
     
